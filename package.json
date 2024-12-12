@@ -1,16 +1,24 @@
 {
-  "name": "forwardproxy",
+  "name": "vercel-forward-proxy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A forward proxy server using Vercel Serverless Functions.",
+  "main": "api/proxy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vercel dev",
+    "deploy": "vercel"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vercel",
+    "proxy",
+    "serverless",
+    "forward-proxy"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.21.2",
-    "http-proxy-middleware": "^3.0.3"
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
